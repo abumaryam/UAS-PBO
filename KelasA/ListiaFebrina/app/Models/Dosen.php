@@ -5,9 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-namespace App\Models;
 use App\Models\TugasAkhir;
-use App\models\Pegawai;
+use App\Models\Pegawai;
 use App\Models\User;
 
  class Dosen extends User implements Pegawai 
@@ -17,6 +16,7 @@ use App\Models\User;
     private $nama;
     private $no_tlp;
     private $perguruan_tinggi;
+    // DP: Kurang -- public $tugas_akhir = [];
 
     public function __construct($nip, $nama, $no_tlp)
     {

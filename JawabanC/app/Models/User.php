@@ -12,7 +12,6 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-// ATRIBUTE
     public $username;
     public $password;
     protected $email;
@@ -46,8 +45,7 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-// END ATRIBUTE
-// METHOD
+
     public function login(){
         return TRUE;
     }
@@ -55,5 +53,5 @@ class User extends Authenticatable
     public function register(){
         return  TRUE;
     }
-// END METHOD
+
 }

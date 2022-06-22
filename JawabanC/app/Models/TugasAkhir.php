@@ -3,8 +3,10 @@ namespace App\Models;
 
 use App\Models\Dosen;
 use App\Models\Mahasiswa;
+use Illuminate\Database\Eloquent\Model;
 
-class TugasAkhir {
+
+class TugasAkhir extends Model{
     public $id;
     public $judulTA;
     public $mahasiswaTA;
@@ -22,6 +24,8 @@ class TugasAkhir {
     public function setPengujiTA(Dosen $nama){
         $this->pengujiTA = $nama;
     }
+
+    // karena atribut-atribut public jadi tidak perlu ada getter
 
     public function tambahTA(){
         return true;

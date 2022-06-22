@@ -39,4 +39,6 @@ class Mahasiswa extends user{
     {
         return $this->tugas_akhir;
     }
+
+    // DP: kurang setter dan getter untuk atribut-atribut yang private
 }

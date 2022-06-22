@@ -10,5 +10,5 @@ class Dosen
     private $nama;
     private $no_telp;
 
-    public function validasiMahasiswa();
+    public function validasiMahasiswa();// tidak begini cara membuat function
 }

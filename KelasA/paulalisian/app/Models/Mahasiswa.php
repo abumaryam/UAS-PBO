@@ -9,6 +9,8 @@ class Mahasiswa{
     private $IPK;
     private $alamat;
 
+    // DP: Kurang constructor
+
     public function inputMakul(){}
     public function updateProfile(){}
 
@@ -20,4 +22,7 @@ class Mahasiswa{
     {
         return $this->tugas_akhir;
     }
+
+    // DP: Kurang setter dan getter untuk atribut yang private
+
 }

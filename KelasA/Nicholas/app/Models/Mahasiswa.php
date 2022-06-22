@@ -38,4 +38,6 @@ class Mahasiswa{
     public function getTugasAkhir(){
         return $this->tugas_akhir;
     }
+
+    // DP: Kurang setter dan getter untuk atribut yang private
 }

@@ -10,22 +10,22 @@ class Mahasiswa {
     private $ipk;
     private $alamat;
 
-    public function setNim($nim)
+    public function setNim($nim) // tidak seperti ini cara membuat setter (skor: 0.5)
     {
         echo $this->nim."H1101201027";
     }
 
-    public function setNama()
+    public function setNama()// tidak seperti ini cara membuat setter (skor: 0.5)
     {
         echo $this->nama."Meizhar Riswanda";
     }
 
-    public function setIpk()
+    public function setIpk()// tidak seperti ini cara membuat setter (skor: 0.5)
     {
         echo $this->ipk."4.0";
     }
 
-    public function setAlamat()
+    public function setAlamat()// tidak seperti ini cara membuat setter (skor: 0.5)
     {
         echo $this->alamat."Sungai Jawi";
     }

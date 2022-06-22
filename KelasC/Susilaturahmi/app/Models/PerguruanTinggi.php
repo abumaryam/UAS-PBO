@@ -1,6 +1,6 @@
 <?php
 namespace App\Models;
-requare_once('Mahasiswa.php');
+require_once('Mahasiswa.php');
 
 class PerguruanTinggi extends Mahasiswa 
 {

@@ -12,18 +12,12 @@ class Dosen extends User implements Pegawai
     private $tugas_akhir = [];
     private $perguruan_tinggi;
 
-    public function validasiMahasiswa()
-    {
-
-    }
+    
     public function setNip($nip)
     {
         $this->nip = $nip;
     }
-    public function presensiMasuk()
-    {
-        
-    }
+
     public function getNip()
     {
         return $this->nip;
@@ -48,16 +42,31 @@ class Dosen extends User implements Pegawai
     {
         $this->perguruan_tinggi=$perguruan_tinggi;
     }
+
     public function getPerguruanTinggi()
     {
         return $this->perguruan_tinggi;
     }
+
     public function setTugasAkhir(TugasAkhir $tugas_akhir)
     {
         $this->tugas_akhir[]=$tugas_akhir;
     }
+
     public function getTugasAkhir()
     {
         return $this->tugas_akhir;
     }
+
+    public function validasiMahasiswa()
+    {
+
+    }
+
+    public function presensiMasuk()
+    {
+        
+    }
+
+    // DP: kurang getNoTelp()
 }

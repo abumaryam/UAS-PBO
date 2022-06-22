@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Models;
-use illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
 use App\Models\Pegawai;
 use App\Models\PerguruanTinggi;
@@ -22,7 +22,7 @@ class Dosen extends User implements Pegawai{
     }
     
     public function getNIP(){
-        return $this-nip;
+        return $this->nip;
     }
 
     public function presensiMasuk()
@@ -31,8 +31,8 @@ class Dosen extends User implements Pegawai{
     }
 
     public function setNama($nama)
-    {this->nama = $nama;
-    
+    {
+        this->nama = $nama;
     }
 
     public function getNama()

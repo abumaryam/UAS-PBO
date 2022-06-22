@@ -11,11 +11,15 @@ class Dosen extends User implements Pegawai{
     private $nama;
     private $no_telp;
     private $perguruan_tinggi;
-    private $tugas_akhir;
-
-    public function validasiMahasiswa(){
-
+    private $tugas_akhir; // DP: Seharuanya array
+    
+    // Construct dari class Dosen
+    public function __construct($nip, $nama, $no_telp){
+        $this->nip = $nip;
+        $this->nama = $nama;
+        $this->no_telp = $no_telp;
     }
+
     // Interface dari class Pegawai
     public function setNIP($nip){
         $this->nip = $nip;
@@ -29,25 +33,16 @@ class Dosen extends User implements Pegawai{
         $this->nama = $nama;
     }
 
-    public function getNama($nama){
+    public function getNama($nama){// DP: tidak perlu parameter
         return $this->$nama;
     }
 
-    public function presensiMasuk(){
-
-    }
-    // Construct dari class Dosen
-    public function __construct($nip, $nama, $no_telp){
-        $this->nip = $nip;
-        $this->nama = $nama;
-        $this->no_telp = $no_telp;
-    }
 
     // Relasi One to Many dengan class TugasAkhir
     public function setTugasAkhir(TugasAkhir $tugas_akhir){
         $this->tugas_akhir[] = $tugas_akhir;
     }
-
+    
     public function getTugasAkhir(){
         return $this->tugas_akhir;
     }
@@ -60,5 +55,13 @@ class Dosen extends User implements Pegawai{
     public function getPerguruanTinggi(){
         return $this->perguruan_tinggi;
     }
+    
+    public function validasiMahasiswa(){
+        
+    }
 
+    public function presensiMasuk(){
+
+    }
+    
 }

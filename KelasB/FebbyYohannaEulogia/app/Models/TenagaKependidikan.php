@@ -21,7 +21,7 @@ class TenagaKependidikan extends User implements Pegawai{
     }
 
     public function presensiMasuk()
-    {
+{
         
     }
 

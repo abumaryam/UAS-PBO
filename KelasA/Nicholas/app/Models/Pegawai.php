@@ -5,7 +5,7 @@ namespace App\Models;
 
 use App\Models\TenagaKependidikan;
 
-interface Pegawai extends TenagaKependidikan{
+interface Pegawai extends TenagaKependidikan{ // DP: interfacenya tidak extends
     public function setNip();
     public function presensiMasuk();
     public function getNip();

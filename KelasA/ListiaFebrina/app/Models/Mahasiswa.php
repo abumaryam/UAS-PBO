@@ -6,9 +6,6 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 
-
-
-
 use App\Models\User;
 
 class Mahasiswa extends User
@@ -39,25 +36,25 @@ class Mahasiswa extends User
     {
         $this->nim = $nim;
     }
-    public function getNim()
+    public function getNim() //0.5
     {
-        return $nim;
+        return $nim;// seharusnya menggunakan $this
     }
     public function setNama($nama)
     {
         $this->nama = $nama;
     }
-    public function getNama()
+    public function getNama()//0.5
     {
-        return $nama;
+        return $nama;// seharusnya menggunakan $this
     }
     public function setIpk($ipk)
     {
         $this->ipk = $ipk;
     }
-    public function getIpk()
+    public function getIpk()//0.5
     {
-        return $ipk;
+        return $ipk; // seharusnya menggunakan $this
     }
     public function setAlamat($alamat)
     {
@@ -65,6 +62,6 @@ class Mahasiswa extends User
     }
     public function getAlamat()
     {
-        return $alamat;
+        return $alamat;// seharusnya menggunakan $this
     }
 }

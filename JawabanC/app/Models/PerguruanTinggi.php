@@ -1,15 +1,14 @@
 <?php
 namespace App\Models;
 
-use App\Models\Dosen;
-use App\Models\Mahasiswa;
+use Illuminate\Database\Eloquent\Model;
 
-class PerguruanTinggi {
+class PerguruanTinggi extends Model{
     public $id;
     public $namaPT;
     protected $akreditasi;
     
     public function registerMaba() {
-        echo "Registrasi Mahasiswa Baru......";
+        echo "Mendaftarkan mahasiswa baru";
     }
 }

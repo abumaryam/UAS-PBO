@@ -2,14 +2,14 @@
 
 namespace App\Models;
 
-use illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Model;
 
 require_once('Mahasiswa.php');
 class PerguruanTinggi extends Mahasiswa
 {
 
-    public$id;
-    public$namaPT;
+    public $id;
+    public $namaPT;
     protected $akreditasi;
 
     public function registrasiMaba()

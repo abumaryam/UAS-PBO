@@ -10,5 +10,5 @@ class TenagaKependidikan
     private $nama;
     private $alamat;
 
-    public function hitungTunjanganKinerja();
+    public function hitungTunjanganKinerja(); // tidak seperti ini cara membuat function
 }

@@ -68,4 +68,6 @@ class Dosen extends User implements Pegawai{
     {
         return $this->nama;
     }
+
+    // DP: Kurang getNoTelp(){ }
 }

@@ -1,6 +1,6 @@
 <?php
 namespace App\Models;
-requare_once('User.php');
+require_once('User.php');
 use App\Models\User;
 
 class Mahasiswa extends User

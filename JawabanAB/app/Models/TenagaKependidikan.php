@@ -10,34 +10,34 @@ class TenagaKependidikan extends User implements Pegawai {
     private $alamat;
 
     public function hitungTunjanganKinerja(){
-        echo "Hitung tunjangan kerja......";
+        echo "Menghitung tunjangan kinerja";
     }
     
     public function presensiMasuk(){
         // isi
     }
-    public function setNip($nip_baru){
-        $this->nip = $nip_baru;
+    public function setNip($nip){
+        $this->nip = $nip;
     }
 
     public function getNip(){
-        echo "NIP Anda yang terdaftar = ", $this->nip;
+        return $this->nip;
     }
 
-    public function setNama($nama_baru){
-        $this->nama = $nama_baru;
+    public function setNama($nama){
+        $this->nama = $nama;
     }
 
     public function getNama(){
-        echo "Nama Anda yang terdaftar = ", $this->nama;
+        return $this->nama;
     }
 
-    public function setAlamat($alamat_baru){
-        $this->alamat = $alamat_baru;
+    public function setAlamat($alamat){
+        $this->alamat = $alamat;
     }
 
     public function getAlamat(){
-        echo "Alamat Anda yang terdaftar = ", $this->alamat;
+        return $this->alamat;
     }
     
 

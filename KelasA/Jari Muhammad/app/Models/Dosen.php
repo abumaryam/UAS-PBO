@@ -67,4 +67,6 @@ class Dosen extends User implements Pegawai{
     {
         return $this->tugas_akhir;
     }
+
+    // DP: tidak ada method getNoTelp()
 }

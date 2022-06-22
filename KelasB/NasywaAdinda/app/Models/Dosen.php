@@ -45,7 +45,7 @@ class Dosen extends User implements Pegawai{
 
     public function setId($perguruantinggi){
         $this->id = $id;
-    }
+}
 
     public function getId(){
         return $this->id;

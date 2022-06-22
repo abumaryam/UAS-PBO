@@ -3,6 +3,7 @@ namespace App\Models;
 
 use App\Models\User;
 use App\Models\PerguruanTinggi;
+use App\Models\TugasAkhir;
 
 class Mahasiswa extends User {
     private $nim;
@@ -10,54 +11,61 @@ class Mahasiswa extends User {
     private $IPK;
     private $alamat;
     private $perguruan_tinggi;
+    private $tugas_akhir;
 
     public function __construct(PerguruanTinggi $perguruan_tinggi){
-            $this->perguruan_tinggi = $perguruan_tinggi;
+        $this->perguruan_tinggi = $perguruan_tinggi;
     }
     
-    // Setter dan Getter
     public function setNim($nim_baru){
         $this->nim = $nim_baru;
     }
 
     public function getNim(){
-        echo "NIM Anda yang terdaftar = ", $this->nim;
+        return $this->nim;
     }
 
-    public function setNama($nama_baru){
-        $this->nama = $nama_baru;
+    public function setNama($nama){
+        $this->nama = $nama;
     }
 
     public function getNama(){
-        echo "Nama Anda yang terdaftar = ", $this->nama;
+        return $this->nama;
     }
 
-    public function setIPK($ipk_baru){
-        $this->IPK = $ipk_baru;
+    public function setIPK($ipk){
+        $this->IPK = $ipk;
     }
 
     public function getIPK(){
-        echo "IPK Anda yang terdaftar = ", $this->IPK;
+        return $this->IPK;
     }
 
-    public function setAlamat($alamat_baru){
-        $this->alamat = $alamat_baru;
+    public function setAlamat($alamat){
+        $this->alamat = $alamat;
     }
 
     public function getAlamat(){
-        echo "Alamat Anda yang terdaftar = ", $this->alamat;
+        return $this->alamat;
     }
 
     public function getPerguruanTinggi(){
         return $this->perguruan_tinggi;
     }
-    // END Setter dan Getter
+
+    public function setTugasAkhir(TugasAkhir $tugas_akhir){
+        $this->tugas_akhir = $tugas_akhir;
+    }
+
+    public function getTugasAkhir(){
+        return $this->tugas_akhir;
+    }
 
     public function inputMatkul(){
         return TRUE;
     }
 
     public function updateProfil(){
-        echo "Update Profil......";
+        echo "Memperbaharui profil";
     }
 }

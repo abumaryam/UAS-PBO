@@ -47,6 +47,10 @@ class Mahasiswa extends User
 
     }
 
+    public function setTA(TugasAkhir $ta)
+    {
+
+    }
     public function inputMatkul()
     {
 
@@ -57,8 +61,4 @@ class Mahasiswa extends User
 
     }
 
-    public function setTA(TugasAkhir $ta)
-    {
-
-    }
 }

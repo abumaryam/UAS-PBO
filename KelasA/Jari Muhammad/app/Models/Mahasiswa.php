@@ -36,4 +36,6 @@ class Mahasiswa{
     {
         return $this->tugas_akhir;
     }
+
+    // DP: Kurang getter dan setter yang lain
 }

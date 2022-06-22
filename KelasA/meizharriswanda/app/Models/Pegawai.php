@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Foundation\Auth\Pegawai;
 
-class Pegawai {
+class Pegawai { // DP: harusnya yang dibuat interface bukan class
     private $setNip;
     public $presensiMasuk;
     private $getNip;

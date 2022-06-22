@@ -3,7 +3,7 @@
 namespace Http\Controllers;
 Use Http\Controllers\Controller;
 
-Class tugasAkhirController extends Controller{
+Class TugasAkhirController extends Controller{
     public function daftarkanTa() {
 
     }

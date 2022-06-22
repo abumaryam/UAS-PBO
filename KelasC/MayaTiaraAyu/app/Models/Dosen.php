@@ -22,7 +22,7 @@ class Dosen extends Model implements Pegawai {
         
     }
 
-    public function presensi(){
+    public function presensi(){ //salah
 
     }
 
